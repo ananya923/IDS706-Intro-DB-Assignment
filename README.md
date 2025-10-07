@@ -22,9 +22,9 @@ After inspecting the structure of the dataset using the `PRAGMA table_info()` co
 - For DBeaver, we connect to the database by putting filepath into the Connection widget.
 
 Results:
-![connect_db](screenshots/command_line/connect_db_1.png)
-![connect_db](screenshots\command_line\connect_db_2.png)
-![connect_db](screenshots\DBeaver\connect_db_1.png)
+- ![connect_db](screenshots/command_line/connect_db_1.png)
+- ![connect_db](screenshots/command_line/connect_db_2.png)
+- ![connect_db](screenshots/DBeaver/connect_db_1.png)
 
 
 1. See data types using table_info().
@@ -34,7 +34,7 @@ Query:
 PRAGMA table_info(university_rankings);
 ```
 Results:
-![table_info](screenshots\command_line\analyze_table_info.png)
+![table_info](screenshots/command_line/analyze_table_info.png)
 
 -- 2. Come up with questions about the data, and use queries to answer them.
 
