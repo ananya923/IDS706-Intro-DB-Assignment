@@ -36,49 +36,67 @@ PRAGMA table_info(university_rankings);
 Results:
 ![table_info](screenshots/command_line/analyze_table_info.png)
 
--- 2. Come up with questions about the data, and use queries to answer them.
+2. Come up with questions about the data, and use queries to answer them.
+I came up with the following questions:
 
--- 3. Queries for Self-formed EDA Questions:
+3. Queries for Self-formed EDA Questions:
 
--- 3.1. How many years of rankings are shown in the data?
+##### 3.1. How many years of rankings are shown in the data?
+
+```sql
 SELECT year, COUNT(year)
 FROM university_rankings
 GROUP BY year;
+```
+![table_info](screenshots/command_line/q3_1.png)
 
--- 3.2. How many countries appear in this table? 
+
+
+##### 3.2. How many countries appear in this table? 
+```sql
 SELECT COUNT(DISTINCT country) FROM university_rankings;
+```
+![table_info](screenshots/command_line/q3_2.png)
 
--- 3.3. How does the set of countries represented differ across years?
+
+##### 3.3. How does the set of countries represented differ across years?
+```sql
 SELECT year, COUNT(DISTINCT country) FROM university_rankings
 GROUP BY year;
+```
+![table_info](screenshots/command_line/q3_3.png)
 
--- 3.4. Which institutions appear in the top 5 across various years?
+##### 3.4. Which institutions appear in the top 5 across various years?
+```sql
 SELECT year, institution FROM university_rankings
 WHERE world_rank <= 5;
+```
+![table_info](screenshots/command_line/q3_4.png)
 
--- 3.5. Check summary statistics of quality_of_education
+##### 3.5. Check summary statistics of quality_of_education
+```sql
 SELECT AVG(quality_of_education) AS avg_qual,
 SUM(quality_of_education) AS sum_qual,
 MIN(quality_of_education) AS min_qual,
 MAX(quality_of_education) AS mix_qual
 FROM university_rankings;
+```
+![table_info](screenshots/command_line/q3_5.png)
 
--- 3.6. How do these stats differ across years?
+##### 3.6. How do these stats differ across years?
+```sql
 SELECT year, AVG(quality_of_education) AS avg_qual, 
 SUM(quality_of_education) AS sum_qual,
 MIN(quality_of_education) AS min_qual,
 MAX(quality_of_education) AS mix_qual
 FROM university_rankings 
 GROUP BY year;
-
--- A documentation for this table would be super helpful. It'd help us understand the difference between
--- variables like score and influence. Beyond SQLite, Python would be a great tool to see correlations
--- and data visualization among these variables.
-
-```sql
-SELECT *
-FROM university_rankings;
 ```
+![table_info](screenshots/command_line/q3_6.png)
+
+### Observations from Exploratory Queries:
+1. A documentation for this table would be super helpful to the database analyst. It'd help us understand the difference between variables like score and influence. 
+2. Beyond SQLite, Python would be a great tool to see correlations and data visualization among these variables.
 
 
 ### CRUD Queries Provided in the Instructions
