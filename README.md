@@ -26,7 +26,7 @@ Results:
 - ![connect_db](screenshots/command_line/connect_db_2.png)
 - ![connect_db](screenshots/DBeaver/connect_db_1.png)
 
-
+====================================================================================================
 1. See data types using table_info().
 
 Query:
