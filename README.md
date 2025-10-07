@@ -37,7 +37,7 @@ Results:
 ![table_info](screenshots/command_line/analyze_table_info.png)
 
 2. Come up with questions about the data, and use queries to answer them.
-I came up with the following questions:
+- I came up with the following questions:
 
 3. Queries for Self-formed EDA Questions:
 
