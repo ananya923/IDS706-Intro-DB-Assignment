@@ -22,9 +22,9 @@ After inspecting the structure of the dataset using the `PRAGMA table_info()` co
 - For DBeaver, we connect to the database by putting filepath into the Connection widget.
 
 Results:
-![](screenshots\command_line\connect_db_1.png)
-![](screenshots\command_line\connect_db_2.png)
-![](screenshots\DBeaver\connect_db_1.png)
+![connect_db](screenshots/command_line/connect_db_1.png)
+![connect_db](screenshots\command_line\connect_db_2.png)
+![connect_db](screenshots\DBeaver\connect_db_1.png)
 
 
 1. See data types using table_info().
