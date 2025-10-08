@@ -11,7 +11,7 @@
 
 ## Explanation of Queries
 
-### Exploratory Queries
+### Exploratory Queries:
 
 My approach for coming up with these queries was to take a look at the data and ask questions that would reveal the most important information about this dataset.
 
@@ -99,4 +99,40 @@ GROUP BY year;
 2. Beyond SQLite, Python would be a great tool to see correlations and data visualization among these variables.
 
 
-### CRUD Queries Provided in the Instructions
+### CRUD Queries Provided in the Instructions:
+##### 1. Insert Duke Tech into the data
+```sql
+INSERT INTO university_rankings(world_rank, institution, country, score)
+VALUES (350, 'Duke Tech', 'USA', 60.5);
+SELECT * FROM university_rankings WHERE institution = 'Duke Tech';
+```
+![table_info](screenshots/command_line/crud_insert.png)
+
+##### 2. How many universities from Japan show up in the global top 200 in 2013?
+```sql
+SELECT COUNT(institution)
+FROM university_rankings 
+WHERE world_rank <= 20 AND country = 'Japan';
+```
+![table_info](screenshots/command_line/crud_japan.png)
+
+##### 3. Increase Oxford's score by +1.2 points
+```sql
+UPDATE university_rankings
+SET score = score + 1.2
+WHERE year = 2014 AND institution = 'University of Oxford';
+SELECT * FROM university_rankings
+WHERE year = 2014 AND institution = 'University of Oxford';
+```
+![table_info](screenshots/command_line/crud_oxford.png)
+
+##### 4. Delete universities with a score below 45 in 2015
+```sql
+DELETE FROM university_rankings
+WHERE year = 2015 AND world_rank > 45;
+SELECT COUNT(*) FROM university_rankings;
+```
+![table_info](screenshots/command_line/crud_delete.png)
+
+### Note:
+Please find screenshots of DBeaver executions here: [DBeaver_subfolder](/screenshots/DBeaver/). They were not included in the README for easier readability. Further, **command line inputs are reproducible** across more environments, as a DBeaver installation won't be required. **So, they were prioritized** in the README documentation.
