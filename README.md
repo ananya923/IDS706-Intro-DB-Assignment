@@ -3,6 +3,7 @@
 ### This project explores the University Rankings database to execute simple SQL queries. The goal here is to showcase how SQL queries and CRUD functions work.
 
 ## Repository Structure
+```
 IDS706-INTRO-DB-ASSIGNMENT/
 ├── crud_queries.sql            # CRUD operation queries
 ├── my_queries.sql              # Self-made analysis queries
@@ -33,6 +34,7 @@ IDS706-INTRO-DB-ASSIGNMENT/
         ├── q3_4.png               # Question 3.4 output
         ├── q3_5.png               # Question 3.5 output
         └── q3_6.png               # Question 3.6 output
+```
 
 
 ## Setup Instructions
