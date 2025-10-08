@@ -59,7 +59,7 @@ Results:
 - ![connect_db](screenshots/command_line/connect_db_2.png)
 - ![connect_db](screenshots/DBeaver/connect_db_1.png)
 
-====================================================================================================
+================================================================
 1. See data types using table_info().
 
 Query:
@@ -68,6 +68,7 @@ PRAGMA table_info(university_rankings);
 ```
 Results:
 ![table_info](screenshots/command_line/analyze_table_info.png)
+
 
 2. Come up with questions about the data, and use queries to answer them.
 - I came up with the following questions:
@@ -166,6 +167,7 @@ WHERE year = 2015 AND world_rank > 45;
 SELECT COUNT(*) FROM university_rankings;
 ```
 ![table_info](screenshots/command_line/crud_delete.png)
+The error in the above screenshot is due to a typo in the name of the database. After correcting the typo, I obtained the correct output which is visible at the end of the screenshot.
 
 ### Note:
 Please find screenshots of DBeaver executions here: [DBeaver_subfolder](/screenshots/DBeaver/). They were not included in the README for easier readability. Further, **command line inputs are reproducible** across more environments, as a DBeaver installation won't be required. **So, they were prioritized** in the README documentation.
