@@ -1,8 +1,39 @@
 # IDS706-Intro-DB-Assignment
 
-## This project explores the University Rankings database to execute simple SQL queries. The goal here is to showcase how SQL queries and CRUD functions work.
+### This project explores the University Rankings database to execute simple SQL queries. The goal here is to showcase how SQL queries and CRUD functions work.
 
 ## Repository Structure
+IDS706-INTRO-DB-ASSIGNMENT/
+├── crud_queries.sql            # CRUD operation queries
+├── my_queries.sql              # Self-made analysis queries
+├── README.md                   # Project documentation
+├── university_database.db      # SQLite database file
+└── screenshots/                # Saved screenshots
+    ├── command_line/           # Terminal-based queries
+    │   ├── crud_delete.png         # DELETE example
+    │   ├── crud_insert.png         # INSERT example
+    │   ├── crud_japan.png          # CRUD Update Japan
+    │   ├── crud_oxford.png         # CRUD Update Oxford
+    │   ├── q3_1.png                # Question 3.1 output
+    │   ├── q3_2.png                # Question 3.2 output
+    │   ├── q3_3.png                # Question 3.3 output
+    │   ├── q3_4.png                # Question 3.4 output
+    │   ├── q3_5.png                # Question 3.5 output
+    │   └── q3_6.png                # Question 3.6 output
+    └── DBeaver/                # GUI-based queries
+        ├── analyze_table_info.png # Table analysis
+        ├── connect_db_1.png       # DB connection
+        ├── crud_delete.png        # DELETE example
+        ├── crud_insert.png        # INSERT example
+        ├── crud_japan.png         # CRUD Update Japan
+        ├── crud_oxford.png        # CRUD Update Oxford
+        ├── q3_1.png               # Question 3.1 output
+        ├── q3_2.png               # Question 3.2 output
+        ├── q3_3.png               # Question 3.3 output
+        ├── q3_4.png               # Question 3.4 output
+        ├── q3_5.png               # Question 3.5 output
+        └── q3_6.png               # Question 3.6 output
+
 
 ## Setup Instructions
 - This repository contains `.sql` files, however, it does not provide the necessary environment to execcute these files (the instructions did not require us to create an environment).
